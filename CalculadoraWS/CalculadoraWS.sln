@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraWS", "CalculadoraWS.csproj", "{44A0D49B-E7C6-42E2-9817-32B0B883258D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cliente", "Cliente", "{42C45ED2-B36A-4A83-A786-6C12508D50B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad.AreasCalc", "..\Actividad.AreasCalc\Actividad.AreasCalc.csproj", "{17EE7EF8-4050-4411-8784-07D7979597C9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44A0D49B-E7C6-42E2-9817-32B0B883258D} = {44A0D49B-E7C6-42E2-9817-32B0B883258D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44A0D49B-E7C6-42E2-9817-32B0B883258D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A0D49B-E7C6-42E2-9817-32B0B883258D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A0D49B-E7C6-42E2-9817-32B0B883258D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A0D49B-E7C6-42E2-9817-32B0B883258D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EE7EF8-4050-4411-8784-07D7979597C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EE7EF8-4050-4411-8784-07D7979597C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EE7EF8-4050-4411-8784-07D7979597C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EE7EF8-4050-4411-8784-07D7979597C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17EE7EF8-4050-4411-8784-07D7979597C9} = {42C45ED2-B36A-4A83-A786-6C12508D50B9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D01352E-0C06-4105-8AC9-4E07A9E1F915}
+	EndGlobalSection
+EndGlobal
