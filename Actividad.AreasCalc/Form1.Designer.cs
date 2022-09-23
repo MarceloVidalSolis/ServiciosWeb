@@ -1,7 +1,7 @@
 ﻿
 namespace Actividad.AreasCalc
 {
-    partial class Form1
+    partial class Áreas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,17 @@ namespace Actividad.AreasCalc
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Áreas));
             this.Lado_textBox = new System.Windows.Forms.TextBox();
             this.Radio_textBox = new System.Windows.Forms.TextBox();
             this.Base_textBox = new System.Windows.Forms.TextBox();
             this.Altura_textBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Limpiar_button = new System.Windows.Forms.Button();
             this.groupBoxTriangulo = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AreaTriangulo_textBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -43,34 +47,32 @@ namespace Actividad.AreasCalc
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBoxCirculo = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Diametro_textbox = new System.Windows.Forms.TextBox();
+            this.Diametro_radioButton = new System.Windows.Forms.RadioButton();
+            this.Radio_radioButton = new System.Windows.Forms.RadioButton();
+            this.Radio_pictureBox = new System.Windows.Forms.PictureBox();
             this.AreaCirculo_textBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.Circulo_button = new System.Windows.Forms.Button();
             this.groupBoxCuadrado = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.AreaCuadrado_textBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Cuadrado_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.Limpiar_button = new System.Windows.Forms.Button();
-            this.Radio_radioButton = new System.Windows.Forms.RadioButton();
-            this.Diametro_radioButton = new System.Windows.Forms.RadioButton();
-            this.Diametro_textbox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.Diametro_pictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBoxTriangulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxCirculo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Radio_pictureBox)).BeginInit();
             this.groupBoxCuadrado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Diametro_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Lado_textBox
@@ -120,6 +122,28 @@ namespace Actividad.AreasCalc
             this.panel1.Size = new System.Drawing.Size(823, 479);
             this.panel1.TabIndex = 4;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(374, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Áreas";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Limpiar_button
+            // 
+            this.Limpiar_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Limpiar_button.Location = new System.Drawing.Point(19, 444);
+            this.Limpiar_button.Name = "Limpiar_button";
+            this.Limpiar_button.Size = new System.Drawing.Size(75, 23);
+            this.Limpiar_button.TabIndex = 6;
+            this.Limpiar_button.Text = "Limpiar";
+            this.Limpiar_button.UseVisualStyleBackColor = true;
+            this.Limpiar_button.Click += new System.EventHandler(this.Limpiar_button_Click);
+            // 
             // groupBoxTriangulo
             // 
             this.groupBoxTriangulo.Controls.Add(this.label12);
@@ -139,6 +163,24 @@ namespace Actividad.AreasCalc
             this.groupBoxTriangulo.TabIndex = 3;
             this.groupBoxTriangulo.TabStop = false;
             this.groupBoxTriangulo.Text = "Triángulo";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(243, 350);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(16, 16);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "2";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(231, 358);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(16, 16);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "u";
             // 
             // pictureBox1
             // 
@@ -197,12 +239,13 @@ namespace Actividad.AreasCalc
             // 
             // groupBoxCirculo
             // 
+            this.groupBoxCirculo.Controls.Add(this.Diametro_pictureBox);
             this.groupBoxCirculo.Controls.Add(this.label10);
             this.groupBoxCirculo.Controls.Add(this.label11);
             this.groupBoxCirculo.Controls.Add(this.Diametro_textbox);
             this.groupBoxCirculo.Controls.Add(this.Diametro_radioButton);
             this.groupBoxCirculo.Controls.Add(this.Radio_radioButton);
-            this.groupBoxCirculo.Controls.Add(this.pictureBox2);
+            this.groupBoxCirculo.Controls.Add(this.Radio_pictureBox);
             this.groupBoxCirculo.Controls.Add(this.AreaCirculo_textBox);
             this.groupBoxCirculo.Controls.Add(this.label6);
             this.groupBoxCirculo.Controls.Add(this.Circulo_button);
@@ -215,15 +258,63 @@ namespace Actividad.AreasCalc
             this.groupBoxCirculo.TabStop = false;
             this.groupBoxCirculo.Text = "Círculo";
             // 
-            // pictureBox2
+            // label10
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(20, 30);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(211, 154);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(237, 350);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(16, 16);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "2";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(225, 358);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(16, 16);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "u";
+            // 
+            // Diametro_textbox
+            // 
+            this.Diametro_textbox.Location = new System.Drawing.Point(148, 232);
+            this.Diametro_textbox.Name = "Diametro_textbox";
+            this.Diametro_textbox.Size = new System.Drawing.Size(74, 22);
+            this.Diametro_textbox.TabIndex = 9;
+            this.Diametro_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // Diametro_radioButton
+            // 
+            this.Diametro_radioButton.AutoSize = true;
+            this.Diametro_radioButton.Location = new System.Drawing.Point(147, 206);
+            this.Diametro_radioButton.Name = "Diametro_radioButton";
+            this.Diametro_radioButton.Size = new System.Drawing.Size(97, 20);
+            this.Diametro_radioButton.TabIndex = 8;
+            this.Diametro_radioButton.Text = "Diámetro :";
+            this.Diametro_radioButton.UseVisualStyleBackColor = true;
+            this.Diametro_radioButton.CheckedChanged += new System.EventHandler(this.Diametro_radioButton_CheckedChanged);
+            // 
+            // Radio_radioButton
+            // 
+            this.Radio_radioButton.AutoSize = true;
+            this.Radio_radioButton.Location = new System.Drawing.Point(20, 205);
+            this.Radio_radioButton.Name = "Radio_radioButton";
+            this.Radio_radioButton.Size = new System.Drawing.Size(76, 20);
+            this.Radio_radioButton.TabIndex = 7;
+            this.Radio_radioButton.Text = "Radio :";
+            this.Radio_radioButton.UseVisualStyleBackColor = true;
+            this.Radio_radioButton.CheckedChanged += new System.EventHandler(this.Radio_radioButton_CheckedChanged);
+            // 
+            // Radio_pictureBox
+            // 
+            this.Radio_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Radio_pictureBox.Image")));
+            this.Radio_pictureBox.Location = new System.Drawing.Point(20, 30);
+            this.Radio_pictureBox.Name = "Radio_pictureBox";
+            this.Radio_pictureBox.Size = new System.Drawing.Size(211, 154);
+            this.Radio_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Radio_pictureBox.TabIndex = 6;
+            this.Radio_pictureBox.TabStop = false;
             // 
             // AreaCirculo_textBox
             // 
@@ -269,6 +360,24 @@ namespace Actividad.AreasCalc
             this.groupBoxCuadrado.TabIndex = 1;
             this.groupBoxCuadrado.TabStop = false;
             this.groupBoxCuadrado.Text = "Cuadrado";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(224, 350);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(16, 16);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "2";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(212, 358);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(16, 16);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "u";
             // 
             // pictureBox3
             // 
@@ -316,120 +425,25 @@ namespace Actividad.AreasCalc
             this.label1.TabIndex = 1;
             this.label1.Text = "Lado :";
             // 
-            // Limpiar_button
+            // Diametro_pictureBox
             // 
-            this.Limpiar_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Limpiar_button.Location = new System.Drawing.Point(19, 444);
-            this.Limpiar_button.Name = "Limpiar_button";
-            this.Limpiar_button.Size = new System.Drawing.Size(75, 23);
-            this.Limpiar_button.TabIndex = 6;
-            this.Limpiar_button.Text = "Limpiar";
-            this.Limpiar_button.UseVisualStyleBackColor = true;
-            this.Limpiar_button.Click += new System.EventHandler(this.Limpiar_button_Click);
+            this.Diametro_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Diametro_pictureBox.Image")));
+            this.Diametro_pictureBox.Location = new System.Drawing.Point(20, 30);
+            this.Diametro_pictureBox.Name = "Diametro_pictureBox";
+            this.Diametro_pictureBox.Size = new System.Drawing.Size(211, 154);
+            this.Diametro_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Diametro_pictureBox.TabIndex = 14;
+            this.Diametro_pictureBox.TabStop = false;
+            this.Diametro_pictureBox.Visible = false;
             // 
-            // Radio_radioButton
-            // 
-            this.Radio_radioButton.AutoSize = true;
-            this.Radio_radioButton.Location = new System.Drawing.Point(20, 205);
-            this.Radio_radioButton.Name = "Radio_radioButton";
-            this.Radio_radioButton.Size = new System.Drawing.Size(76, 20);
-            this.Radio_radioButton.TabIndex = 7;
-            this.Radio_radioButton.Text = "Radio :";
-            this.Radio_radioButton.UseVisualStyleBackColor = true;
-            this.Radio_radioButton.CheckedChanged += new System.EventHandler(this.Radio_radioButton_CheckedChanged);
-            // 
-            // Diametro_radioButton
-            // 
-            this.Diametro_radioButton.AutoSize = true;
-            this.Diametro_radioButton.Location = new System.Drawing.Point(147, 206);
-            this.Diametro_radioButton.Name = "Diametro_radioButton";
-            this.Diametro_radioButton.Size = new System.Drawing.Size(97, 20);
-            this.Diametro_radioButton.TabIndex = 8;
-            this.Diametro_radioButton.Text = "Diámetro :";
-            this.Diametro_radioButton.UseVisualStyleBackColor = true;
-            this.Diametro_radioButton.CheckedChanged += new System.EventHandler(this.Diametro_radioButton_CheckedChanged);
-            // 
-            // Diametro_textbox
-            // 
-            this.Diametro_textbox.Location = new System.Drawing.Point(148, 232);
-            this.Diametro_textbox.Name = "Diametro_textbox";
-            this.Diametro_textbox.Size = new System.Drawing.Size(74, 22);
-            this.Diametro_textbox.TabIndex = 9;
-            this.Diametro_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(374, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 25);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Áreas";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(212, 358);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 16);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "u";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(224, 350);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(16, 16);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "2";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(237, 350);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(16, 16);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "2";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(225, 358);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(16, 16);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "u";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(243, 350);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(16, 16);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "2";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(231, 358);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(16, 16);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "u";
-            // 
-            // Form1
+            // Áreas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(111)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(850, 503);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
+            this.Name = "Áreas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Areas";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -440,10 +454,11 @@ namespace Actividad.AreasCalc
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxCirculo.ResumeLayout(false);
             this.groupBoxCirculo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Radio_pictureBox)).EndInit();
             this.groupBoxCuadrado.ResumeLayout(false);
             this.groupBoxCuadrado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Diametro_pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -471,7 +486,7 @@ namespace Actividad.AreasCalc
         private System.Windows.Forms.Button Cuadrado_button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox Radio_pictureBox;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button Limpiar_button;
         private System.Windows.Forms.RadioButton Diametro_radioButton;
@@ -484,6 +499,7 @@ namespace Actividad.AreasCalc
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox Diametro_pictureBox;
     }
 }
 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Actividad.AreasCalc
 {
-    public partial class Form1 : Form
+    public partial class Áreas : Form
     {
         public decimal Lado = 0;
         public decimal Base = 0;
@@ -18,7 +18,7 @@ namespace Actividad.AreasCalc
         public decimal Radio = 0;
         public decimal Diametro = 0;
         
-        public Form1()
+        public Áreas()
         {
             InitializeComponent();
             Radio_radioButton.Checked = true;
@@ -109,6 +109,8 @@ namespace Actividad.AreasCalc
                 Diametro_textbox.Enabled = false;
                 Diametro_textbox.Text = "";
                 Diametro = 0;
+                Radio_pictureBox.Visible = true;
+                Diametro_pictureBox.Visible = false;
             }
             else if (Radio_radioButton.Checked == false) 
             {
@@ -116,6 +118,8 @@ namespace Actividad.AreasCalc
                 Radio_textBox.Enabled = false;
                 Radio_textBox.Text = "";
                 Radio = 0;
+                Radio_pictureBox.Visible = false;
+                Diametro_pictureBox.Visible = true;
             }                
         }
 
@@ -128,6 +132,8 @@ namespace Actividad.AreasCalc
                 Radio_textBox.Text = "";
                 Radio = 0;
                 AreaCirculo_textBox.Text = "";
+                Radio_pictureBox.Visible = false;
+                Diametro_pictureBox.Visible = true;
             }
             else if (Diametro_radioButton.Checked == false)
             {
@@ -136,6 +142,8 @@ namespace Actividad.AreasCalc
                 Diametro_textbox.Text = "";
                 Diametro = 0;
                 AreaCirculo_textBox.Text = "";
+                Radio_pictureBox.Visible = true;
+                Diametro_pictureBox.Visible = false;
             }
         }
     }
